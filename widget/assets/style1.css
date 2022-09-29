@@ -1,0 +1,298 @@
+#template_chooser_widget{
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    font-family: 'Andada Pro', serif;
+}
+
+#template_chooser_widget h3{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-family: inherit;
+}
+
+#template_chooser_widget p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    font-family: inherit;
+    line-height: 33.4286px;
+    color: #585858;
+    margin-bottom: 50px;
+}
+
+#template_chooser_widget .tabs{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -2px;
+}
+
+#template_chooser_widget .tabs .tab button{
+    padding: 20px 25px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+    color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+#template_chooser_widget .tabs .active1 button{
+    padding: 20px 25px;
+    background: rgb(249 249 249);
+    border: 1px solid rgb(212, 212, 212);
+    border-bottom: none;
+}
+
+#template_chooser_widget .tabs-content{
+    background: rgb(249 249 249);
+    border: 1px solid rgb(212, 212, 212);
+    position: relative;
+}
+
+#template_chooser_widget .tabs-content .content-tabs{
+    padding: 20px 40px;
+
+}
+
+#template_chooser_widget .tabs-content .tab{
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 16px;
+    display: none;
+}
+
+#template_chooser_widget .tabs-content .tab button{
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: rgb(58, 58, 58);
+    padding: 0;
+}
+
+#template_chooser_widget .tabs-content .levels{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 600px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#template_chooser_widget .tabs-content .levels::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    top: 50%;
+
+}
+
+#template_chooser_widget .tabs-content .line_levels::after{
+    background-color: rgb(242, 41, 91) !important;
+}
+
+#template_chooser_widget .tabs-content .step{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+#template_chooser_widget .tabs-content .filled{
+    background-color: rgb(242, 41, 91);
+    color: white;
+}
+
+#template_chooser_widget .tabs-content .text{
+    font-weight: 600;
+    font-size: 24px;
+    border-bottom: 1px solid rgb(242, 41, 91);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+#template_chooser_widget .tabs-content .items{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#template_chooser_widget .tabs-content .items img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: contain;
+}
+
+#template_chooser_widget .tabs-content .items .item{
+    border-radius: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+    height: fit-content;
+}
+
+#template_chooser_widget .tabs-content .items .title{
+    padding: 15px;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 18px;
+    font-family: inherit;
+    line-height: 33.4286px;
+}
+
+.d-none{
+    display: none !important;
+    flex-wrap: wrap;
+}
+
+#template_chooser_widget .form_data .row-1, #template_chooser_widget .form_data .row-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#template_chooser_widget .form_data .generic{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#template_chooser_widget .form_data input{
+    color: #666;
+    padding: .75em;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    outline: none;
+    min-width: 250px;
+    font-size: 15px;
+}
+
+#template_chooser_widget .form_data label{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+#template_chooser_widget .form_data .required{
+    color: rgb(242, 41, 91);
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#template_chooser_widget .form_data textarea{
+    width: 100%;
+}
+
+#template_chooser_widget .form_data .description, #template_chooser_widget .form_data .fileimg, #template_chooser_widget .form_data .row-4{
+    margin: 10px;
+}
+
+#template_chooser_widget .form_data .row-4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#template_chooser_widget .form_data .row-4 button{
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF;
+    background-color: #f2295b;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+#template_chooser_widget .tabs-content .items .title{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#template_chooser_widget .tabs-content .items .active{
+    background-color: #f2295b !important;
+    color: white !important;
+}
+
+#template_chooser_widget .fileimg input{
+    background: none;
+    border: none;
+}
+
+#template_chooser_widget .tabs-content .span{
+    margin-bottom: 20px;
+}
+
+#template_chooser_widget .tabs-content .span img{
+    width: 200px;
+    margin: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px){
+    #template_chooser_widget .tabs{
+        display: none;
+    }
+
+    #template_chooser_widget .tabs-content .tab{
+        display: block;
+    }
+}
+
+#template_popup_message{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#template_popup_message p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+}
+
+#template_popup_message svg{
+    margin-bottom: 20px;
+}
+
+#template_popup_message .all_set{
+    max-width: 400px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #757575;
+}
